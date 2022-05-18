@@ -1,0 +1,10 @@
+<header class="header">
+    <h1>Your tasks</h1>
+    <input class="new-todo" 
+        placeholder="What is your next task?" 
+        autofocus 
+        [value]="text" 
+        (keyup)="changeText($event)"
+        (keyup.enter)="addTodo()"
+    />
+</header>
